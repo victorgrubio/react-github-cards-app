@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// DOM render function. It renders the app with an specific title
+// I don't get the value of mountNode ... It seems to be the document root or sth
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <App title="The GitHub Cards App" />,
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
